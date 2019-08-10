@@ -25,7 +25,8 @@ project converts the sensor signal to a voltage that the ECU can accept.
 
 # Design
 
-Depends on 16MHz/5V Arduino. CPU frequency is assumed fixed.
+Depends on 16MHz/5V Arduino. CPU frequency is assumed fixed, with timing values computed
+from CPU ticks.
 
 This code assumes you are using an [I2C 12-bit DAC](https://www.sparkfun.com/products/12918) 
 and a [I2C FRAM](https://www.adafruit.com/product/1895). Those links are to the breakout
@@ -33,4 +34,15 @@ boards used in prototyping this project's hardware. If you use those boards, be 
 both of them have I2C pullup resistors. It is recommended that you desolder the pullup
 resistors from the Adafruit board.
 
-Electrical connection is simple. Wire the I2C lines in parallel from A4 and A5 of the Arduino.
+The FRAM chip/board may be omitted without altering the software. This will only affect 
+the first fraction of a second after power up but before the sensor's 
+readings have stabilized.
+
+Electrical connection is simple. Wire the I2C lines, in parallel, to SDA/SCL of the Arduino.
+The breakout boards can be stacked and soldered on a pair of header pins on the I2C, and short
+wires for power. The breakout boards must be powered at 5V.
+
+Wire the ethanol sensor to D8, with a 4.7kOhm pullup resistor in parallel. The ethanol sensor
+should be powered at 12V.
+
+Wire the DAC output to the ECU input.
