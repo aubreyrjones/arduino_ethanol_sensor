@@ -101,7 +101,7 @@ int8_t fetchFromFRAM() {
 
 // == ethanol and filtering ==
 constexpr float ethanolToDAC(int8_t const& eth) {
-  return eth * ethVStep * minEthDAC;
+  return eth * ethVStep + minEthDAC;
 }
 
 bool updateEthanol() {
@@ -166,6 +166,7 @@ void loop() {
     
     #ifdef ETH_SERIAL_DEBUG
     Serial.println(ethanolPercentage);
+    Serial.print('f'); Serial.println(sensorFrequency);
     #endif
   }
   else {
