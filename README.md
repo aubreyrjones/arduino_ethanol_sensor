@@ -21,6 +21,7 @@ project converts the sensor signal to a voltage that the ECU can accept.
 * Converts 50-150Hz square wave FM to a 0.5-4.5V signal
 * Voltages below 0.5V and above 4.5V are used for error states (can be used to set DTC)
 * "Sane" ethanol values within milliseconds of power-on from persistent memory
+* All floating point math is `constexpr`, with no floating point operations occuring at runtime.
 
 
 # Design
