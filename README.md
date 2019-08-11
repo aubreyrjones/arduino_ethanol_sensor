@@ -49,3 +49,4 @@ Wire the DAC output to the ECU input.
 
 ![Circuit Schematic](schematic_snapshot.png)
 
+![Board Preview](board_preview.png)
