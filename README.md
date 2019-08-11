@@ -46,3 +46,6 @@ Wire the ethanol sensor to D8, with a 4.7kOhm pullup resistor in parallel. The e
 should be powered at 12V.
 
 Wire the DAC output to the ECU input.
+
+![Circuit Schematic](schematic_snapshot.png)
+
