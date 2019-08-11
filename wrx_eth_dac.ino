@@ -100,7 +100,7 @@ int8_t fetchFromFRAM() {
 }
 
 // == ethanol and filtering ==
-constexpr float ethanolToDAC(int8_t const& eth) {
+constexpr uint16_t ethanolToDAC(int8_t const& eth) {
   return eth * ethVStep + minEthDAC;
 }
 
