@@ -48,6 +48,9 @@ should be powered at 12V.
 
 Wire the DAC output to the ECU input.
 
+The schematic below accurately describes the prototype circuit I have installed in my vehicle. 
+The board design included in this repository is currently untested.
+
 ![Circuit Schematic](schematic_snapshot.png)
 
 ![Board Preview](board_preview.png)

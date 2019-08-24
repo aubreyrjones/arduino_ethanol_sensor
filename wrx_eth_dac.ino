@@ -48,7 +48,7 @@ volatile uint16_t sensorFrequency = 0;
 void setupTimer()   // setup timer1
 {
   TCCR1A = 0;      // normal mode
-  TCCR1B = 132;    // (10000100) Falling edge trigger, Timer = CPU Clock/256, noise cancellation on
+  TCCR1B = 0b11000100;    // rising edge trigger, Timer = CPU Clock/256, noise cancellation on
   TCCR1C = 0;      // normal mode
   TIMSK1 = 33;     // (00100001) Input capture and overflow interupts enabled
   TCNT1 = 0;       // start from 0
