@@ -195,7 +195,7 @@
                         "file_function": "Paste",
                         "layer_type": "top"
                     },
-                    "filename_format": "%PREFIX/solderpaste_top.gbr",
+                    "filename_format": "%PREFIX/solderpaste_top.gtp",
                     "layers": [
                         31
                     ],
@@ -217,7 +217,7 @@
                         "file_function": "Paste",
                         "layer_type": "bottom"
                     },
-                    "filename_format": "%PREFIX/solderpaste_bottom.gbr",
+                    "filename_format": "%PREFIX/solderpaste_bottom.gbp",
                     "layers": [
                         32
                     ],
@@ -322,7 +322,7 @@
             ]
         }
     ],
-    "timestamp": "2019-08-24T17:39:43",
+    "timestamp": "2019-08-25T17:17:45",
     "type": "EAGLE CAM job",
     "units": "imperial",
     "version": "9.2.0"
